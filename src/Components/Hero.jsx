@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative h-screen flex flex-col items-center justify-center mt-18"
+      className="relative h-screen flex flex-col items-center justify-center mt-18 lg:mt-20"
     >
       {/* Background image for larger screens */}
       <div

@@ -6,9 +6,10 @@ import Educity from "../assets/Educity.png";
 const projects = [
   {
     name: "Food Ordering Website",
-    description: " FrontEnd Website Built with Next.js, Tailwind CSS",
-    link: "https://top-taste.vercel.app/",
-    source: "https://github.com/prathamesh7376/TopTaste",
+    description:
+      " MERN Stack Website Built with React.js, Node,js,Express.js,Tailwind CSS",
+    link: "https://food-ordering-website-mern-frountend.onrender.com",
+    source: "https://github.com/prathamesh7376/Food-Ordering-Website-MERN",
     image: TopTaste,
   },
   {
