@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import mylogo from "../assets/Prathamesh_Logo.png";
 
 const Navbar = () => {
@@ -18,29 +19,31 @@ const Navbar = () => {
             className="h-12 w-auto md:h-16 rounded-sm pr-8"
           />
         </div>
+        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-12 items-center">
-          <a href="#hero" className="text-white hover:text-gray-300">
+          <Link to="/" className="text-white hover:text-gray-300">
             Home
-          </a>
-          <a href="#about" className="text-white hover:text-gray-300">
+          </Link>
+          <Link to="/about" className="text-white hover:text-gray-300">
             About
-          </a>
-          <a href="#skills" className="text-white hover:text-gray-300">
+          </Link>
+          <Link to="/skills" className="text-white hover:text-gray-300">
             Skills
-          </a>
-          <a href="#services" className="text-white hover:text-gray-300">
+          </Link>
+          <Link to="/services" className="text-white hover:text-gray-300">
             Services
-          </a>
-          <a href="#projects" className="text-white hover:text-gray-300">
+          </Link>
+          <Link to="/projects" className="text-white hover:text-gray-300">
             Projects
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
           >
             Contact
-          </a>
+          </Link>
         </div>
+        {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
@@ -63,6 +66,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      {/* Mobile Menu */}
       <div
         className={`fixed top-0 right-0 h-full w-60 bg-gray-700 transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
@@ -88,48 +92,48 @@ const Navbar = () => {
               ></path>
             </svg>
           </button>
-          <a
-            href="#hero"
+          <Link
+            to="/"
             className="text-white hover:text-gray-300"
             onClick={toggleMenu}
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            to="/about"
             className="text-white hover:text-gray-300"
             onClick={toggleMenu}
           >
             About
-          </a>
-          <a
-            href="#skills"
+          </Link>
+          <Link
+            to="/skills"
             className="text-white hover:text-gray-300"
             onClick={toggleMenu}
           >
             Skills
-          </a>
-          <a
-            href="#services"
+          </Link>
+          <Link
+            to="/services"
             className="text-white hover:text-gray-300"
             onClick={toggleMenu}
           >
             Services
-          </a>
-          <a
-            href="#projects"
+          </Link>
+          <Link
+            to="/projects"
             className="text-white hover:text-gray-300"
             onClick={toggleMenu}
           >
             Projects
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
             onClick={toggleMenu}
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import webLogo from "../assets/WebDevelopment_logo.jpeg";
 import APILogo from "../assets/API_logo.jpeg";
 import FrountEndLogo from "../assets/FrountEnd_logo.jpeg";
@@ -65,8 +66,13 @@ const services = [
 ];
 
 const Services = () => {
+  // Scroll to top when this page is rendered
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  }, []);
+
   return (
-    <section id="services" className="py-20 bg-gray-100 mt-16">
+    <section id="services" className="py-20 bg-gray-100 mt-8">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -78,7 +84,7 @@ const Services = () => {
               <img
                 src={service.image}
                 alt={service.name}
-                className="w-26 h-26 mx-auto mb-4"
+                className="w-24 h-24 mx-auto mb-4 object-contain" // Ensures images maintain aspect ratio and fit well
               />
               <h3 className="text-xl font-semibold">{service.name}</h3>
               <p className="text-gray-700">{service.description}</p>

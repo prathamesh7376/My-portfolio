@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  }, []);
+
   const [formData, setFormData] = useState({
     from_name: "",
     from_email: "",
@@ -50,8 +54,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-100">
-      <div className="container mx-auto px-4 flex flex-wrap">
+    <section id="contact" className="py-20 bg-gray-100 mt-12 md:mt-20">
+      <div className="container mx-auto px-4 flex flex-wrap justify-between">
         <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
           <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
           <form
@@ -150,7 +154,7 @@ const Contact = () => {
           <p className="text-lg">
             <strong>Prathamesh Lokhande</strong>
           </p>
-          <p className="text-lg text-">Khopoli, Maharashtra, India. 410203</p>
+          <p className="text-lg">Khopoli, Maharashtra, India. 410203</p>
           <p className="text-lg">
             <strong>Email:</strong>{" "}
             <a
@@ -176,7 +180,7 @@ const Contact = () => {
               allowFullScreen=""
               aria-hidden="false"
               tabIndex="0"
-              className="rounded-2xl shadow-md "
+              className="rounded-2xl shadow-md"
             ></iframe>
           </div>
         </div>
