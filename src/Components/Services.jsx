@@ -4,7 +4,6 @@ import APILogo from "../assets/API_logo.jpeg";
 import FrountEndLogo from "../assets/FrountEnd_logo.jpeg";
 import BackEndLogo from "../assets/BackendDeveloper_logo.jpeg";
 import FullStackLogo from "../assets/Full-Stack_logo.jpeg";
-import MobileDevLogo from "../assets/Mobile-Development_logo.jpeg";
 import MySQLLogo from "../assets/MySQL_logo.jpeg";
 import UIUX from "../assets/UIUX_logo.jpeg";
 import OptimizationLogo from "../assets/Optimization_logo.jpeg";
@@ -38,12 +37,6 @@ const services = [
     image: FullStackLogo,
   },
   {
-    name: "Mobile App Development",
-    description:
-      "Developing cross-platform mobile applications using React Native.",
-    image: MobileDevLogo,
-  },
-  {
     name: "Database Management",
     description: "Designing and maintaining MySQL and MongoDB databases.",
     image: MySQLLogo,
@@ -57,11 +50,6 @@ const services = [
     name: "Performance Optimization",
     description: "Enhancing application performance and loading times.",
     image: OptimizationLogo,
-  },
-  {
-    name: "Consulting Services",
-    description: "Providing expert advice and solutions for your projects.",
-    image: ConsultingLogo,
   },
 ];
 
