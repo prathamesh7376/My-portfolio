@@ -7,7 +7,6 @@ import FullStackLogo from "../assets/Full-Stack_logo.jpeg";
 import MySQLLogo from "../assets/MySQL_logo.jpeg";
 import UIUX from "../assets/UIUX_logo.jpeg";
 import OptimizationLogo from "../assets/Optimization_logo.jpeg";
-import ConsultingLogo from "../assets/Consulting_logo.jpeg";
 
 const services = [
   {
