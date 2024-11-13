@@ -9,7 +9,6 @@ import mongodb from "../assets/MongoDB_logo.jpeg";
 import nextjs from "../assets/Next_logo.jpeg";
 import tailwindcss from "../assets/TailwindCSS_logo.jpeg";
 import hibernate from "../assets/Hibernate_logo.jpeg";
-import reactnative from "../assets/ReactNative_logo.jpeg";
 
 const skills = [
   { name: "Java", image: java },
@@ -23,7 +22,6 @@ const skills = [
   { name: "Next.js", image: nextjs },
   { name: "Tailwind CSS", image: tailwindcss },
   { name: "Hibernate", image: hibernate },
-  { name: "React Native", image: reactnative },
 ];
 
 const Skills = () => {
